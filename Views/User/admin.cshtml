@@ -1,0 +1,6 @@
+@if(User.FindFirstValue(ClaimTypes.Role)=="admin"){
+<p>ADMİN olarak oturum açtınız.</p>
+
+}else{
+<p>Yetkisiz erişim</p>
+}

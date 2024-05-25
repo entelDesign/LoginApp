@@ -1,0 +1,7 @@
+@if((User.FindFirstValue(ClaimTypes.Role)=="admin") || (User.FindFirstValue(ClaimTypes.Role)=="kullanici")){
+<p>
+    Burası normal bir kullanıcı ve admin için index sayfası.
+</p>
+}else{
+<p>Yetkisiz erişim</p>
+}
